@@ -391,13 +391,25 @@ figure figcaption p {
 /* /hover效果*/
 
 footer{
-	padding-top:5em;
-	padding-bottom:5em;
+	padding-top:20px;
+	padding-bottom:20px;
 	background-color: #f9f9f9;
+}
+
+.contactmethod{
+	padding-left: 0px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .contactmethod .fa{
 	color: #17aeea;
+}
+
+.contactmethod li{
+	flex: 1 1 100px;
+	text-align: center;
 }
 
 .contactmethod .col-sm-3.col-xs-3{
