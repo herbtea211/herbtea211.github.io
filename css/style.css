@@ -194,9 +194,9 @@ section.visible-xs-block{
 
 
 .avatar{
-	width: 100px;
+	width: 150px;
 	margin: 2em 0;
-	border: 2px solid #eaeaea;
+	border: 2px solid #b3b3b3;
 }
 
 .saying{
@@ -213,10 +213,15 @@ section.visible-xs-block{
 }
 
 .saying h5{
-	color: ##7b7b7b;
+	color: #8e8e8e;
 	margin-bottom:3em;
 	letter-spacing: 0.5em;
 	line-height: 1.5em;
+}
+
+.saying h4{
+	color: #8e8e8e;
+	letter-spacing: 0.5em;
 }
 
 .saying p:last-child{
@@ -262,13 +267,10 @@ section.visible-xs-block{
 
 .title{
 	font-family: 'Josefin Sans', sans-serif;
-	margin-top: 3em;
-	margin-bottom: 1em;
-	padding-top:1em;
-	padding-bottom:1em;
-	text-align: center;
-	border: 2px solid #c1c1c1;
-	color: #777777;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #777777;
 
 }
 
@@ -388,7 +390,7 @@ figure figcaption p {
 
 /* /hover效果*/
 
-.contact{
+footer{
 	padding-top:5em;
 	padding-bottom:5em;
 	background-color: #f9f9f9;
@@ -583,6 +585,26 @@ img.full{
 	margin-bottom: 5em;
 }
 
+.aboutme section{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme section .photo{
+	margin-right: 40px;
+}
+
+.aboutme section .aboutCon{
+	letter-spacing: 5px;
+}
+
+.aboutme section .aboutCon h4{
+	line-height: 1.5;
+}
+
+
 .sidenav{
 	z-index: 99;
 	position:fixed;
@@ -737,10 +759,13 @@ img.full{
 			margin-bottom: 2em;
 		}
 
+		.aboutme .avatar{
+			width: 100px;
+		}
 
-
-
-      
+		.aboutme section .aboutCon{
+			flex: 1 1 100%;
+		}
   }
 
 /*實際上要寫在這裡才會發動,不然要改格線系統範圍*/
@@ -820,8 +845,8 @@ img.full{
 		}
 
 		.index-sloginfix{
-		position: relative;
-		top: -17em;
+		position: fixed;
+		top: 20vh;
 		}
 
 		.index-sloginfix h3{
@@ -853,8 +878,8 @@ img.full{
 	}
 
 	.index-sloginfix{
-	position: relative;
-	top: -25em;
+	position:fixed;
+	top: 30vh;
 	}
 
 	.index-sloginfix h3{
@@ -886,8 +911,8 @@ img.full{
 	}
 
 	.index-sloginfix{
-	position: relative;
-	top: -30em;
+	position: fixed;;
+	top: 40vh;
 	}
 
 	.index-sloginfix h3{
