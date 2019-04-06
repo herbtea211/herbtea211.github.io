@@ -14,14 +14,14 @@
   <body>
     <div class="hidden-xs fadeInRight animated sidenav">
       <ul>
-        <li><h5><a href="#appdemo1sec1">關於架構</a></h5></li>
-        <li><h5><a href="#appdemo1sec2">關於Android介面</a></h5></li>
-        <li><h5><a href="#appdemo1sec3">關於配色</a></h5></li>
-        <li><h5><a href="#appdemo1sec4">關於流程</a></h5></li>
-        <li><h5><a href="#appdemo1sec5">關於header</a></h5></li>
-        <li><h5><a href="#appdemo1sec6">最愛vs前往購物車</a></h5></li>
-        <li><h5><a href="#appdemo1sec7">關於商品頁</a></h5></li>
-        <li><h5><a href="#appdemo1sec8">關於結帳</a></h5></li>
+        <!-- <li><h5><a href="#appdemo1sec1">架構</a></h5></li> -->
+        <li><h5><a href="#appdemo1sec2">架構&Android介面</a></h5></li>
+        <li><h5><a href="#appdemo1sec3">配色</a></h5></li>
+        <!-- <li><h5><a href="#appdemo1sec4">流程</a></h5></li> -->
+        <li><h5><a href="#appdemo1sec5">header</a></h5></li>
+        <!-- <li><h5><a href="#appdemo1sec6">最愛vs前往購物車</a></h5></li> -->
+        <li><h5><a href="#appdemo1sec7">商品頁</a></h5></li>
+        <li><h5><a href="#appdemo1sec8">結帳</a></h5></li>
       </ul>
     </div>
 
@@ -30,101 +30,69 @@
         <div class="detaillogo">
           <img src="img/demo1/demo1-logo-top.svg"><!-- 置頂LOGO -->
         </div>
-        <h5>委託人:(任職前公司製作的appUI)</h5>
+        <h5>線上購物appUI</h5>
         <h4>尚青購</h4>
         <div class="row">
           <div class="col-sm-6 col-sm-offset-3">
-            
-            <h3 id="appdemo1sec1">關於架構</h3>
-            <p>整個商城的架構用opencart架設,APP介面用framework7,framework7把風格分的很明確,製作前我們最後的決定是Android(其實只是想換個口味,因為上一支產品用IOS..呵呵..)</p>
+              <a href="https://drive.google.com/open?id=19kYbK6tNeK8yzrvFt8A9T5jVp6UYYUdh" target="_blank"><img class="full" src="img/demo1/app-18.jpg"></a>
+            <!-- <h3 id="appdemo1sec1">關於架構</h3>
+            <p>整個商城的後台用opencart架設,APP前端＆介面用framework7,framework7把風格分的很明確,最後我們決定使用Android-UI,原因下面會說明</p> -->
             <img class="full" src="img/demo1/app-1.jpg">
-            <h3 id="appdemo1sec2">關於Android介面</h3>
-            <p>講到Android介面就一定得看看MATEREIAL&nbsp;DESIGN,當時主管有要求"盡量看起來像原生的~~<b>"(給我的理由是:這樣看起來比較屌!!~~原來當主管可以這麼任性阿~~但我笑著接受了~~)</b>所以花了一些時間研究MATEREIAL&nbsp;DESIGN,說實在的要完全搬過來不太可能,但該有的一定會有!!另外!!其實用Android介面還是有很多考量拉~~最關鍵的原因兩個:</p>
-            <h4><b>Android介面對我們的目標族群來說比較有親和力,持有率比較高</b></h4>
-            <p>如果是以"購物商城"來看,我們預設的族群在"30歲~60歲"這個區間,30~40使用兩種介面原則上都沒問題(當然不包括熱愛排隊的鐵果粉~~),但40~60的族群用Android陣營手機的比例較高,當然是用習慣的比較好!!
-            </p>
-            <h4><b>Android介面跟操作方式比較適合購物類型的APP</b></h4>
-            <p>購物類型的APP內容不算少,結帳一堆input,查詢訂單,蒐尋記錄,貨物進度,商品說明...芭拉芭拉...<br>
-            當然用IOS也做得到,但是我們認為在以framework7為前提的情況下,Android介面在很多部分支援起來比較方便,當然比較方便就意味著比較快~~~(時程很重要~~握拳)</p>
+            <h3 id="appdemo1sec2">關於架構&Android介面</h3>
+            <p>整個商城的後台用opencart架設,APP前端＆介面用framework7,framework7把風格分的很明確,預設的 Android-UI 大部分都符合 MATEREIAL DESIGN 的規範,
+              以一個購物 APP 來說,Android-UI 是比較適合的:
+              <ol>
+                <li>我們預設的<b>消費族群跟 IOS 用戶的交集非常低</b></li>
+                <li>購物類型的APP需要的操作行為其實很簡單,但是內容資訊多,比較之下 <b>Android-UI 支援起來會比較輕鬆</b></li>
+                <li>例如:商品項目跟分類有可能很多,所以橫向 scrollView 很好用</li>
+              </ol>
             <h3 id="appdemo1sec3">關於配色</h3>
-            <p>我的習慣是會先討論基本的配色,實作過程中會調整畫面跟配色的比例,過程中還會視情況漸漸增加或減少(原則上很少減少~~我自己的原則配色就很省了~~)</p>
+            <p>我們會先討論基本的配色,實作過程中會隨時調整,但事實上很少減少~~通常我用的配色都很少～～</p>
             <img src="img/demo1/app-2.svg">
             <p>像這裡一開始只有4個,兩個灰色是用在字體上,<b>紅色是主色,藍色負責希望吸引USER注意</b>再運用白底,大致上70%夠用了,剩下30%就是特殊情況了~~</p>
-            <p>至於用紅色當主色,是因為<b>"高層覺得紅色比較能刺激消費者的購物衝動"</b>關於這一點我想是見仁見智,先不論蝦皮,MOMO跟PChome就是紅色系(我的認知MOMO的桃色算紅色系)跟藍色系的對比,兩個都市佔率很高,消費性產業裡用"紅色"跟"非紅色"都有人做的很好,所以不管你用什麼色都有人可以舉例打你的臉~~呵呵~~我覺得拉~~只要掌握這個重點就好~~<b>"你想傳達什麼樣的理念給消費者??"</b>這個比較重要拉~~</p>
-            <h3 id="appdemo1sec4">關於流程</h3>
+            <p>至於用紅色當主色,是因為<b>"高層覺得紅色比較能刺激消費者的購物衝動"</b>關於這一點我想是見仁見智,先不論蝦皮,MOMO跟PChome都是紅色系(我的認知MOMO的桃色算紅色系)跟藍色系的對比,三家市佔率都很高,但消費性電商裡用"紅色"跟"非紅色"都有人做的很好(Lazada目前的主色偏藍綠色),長期來說,品牌的代表色還是以<b>能精準傳達品牌理念</b>為主要目標會比較好</p>
+            <!-- <h3 id="appdemo1sec4">關於流程</h3>
             <img alt="這圖超大請見諒" src="img/demo1/app-2.jpg">
-            <p>這張圖實在太大,就意思一下PO起來(不要在意解析度了~~拜託~~),相較於使用操作模板做demo,用這種圖面化也有很多好處喔!!<b>"對於整體的規畫會比較清楚,團隊的討論也很方便"</b>最常發生的情境就是我們幾個人對著這張圖比手畫腳一陣之後,寫下註解,恩恩~~就這樣改~~(當然會一直重複這個循環~~然後越來越快~~呵呵~~)<b>(如果時間充裕的話,我覺得先做流程圖再做DEMO比較好~~但是通常都沒那種美國時間呢~~)</b></p>
+            <p>這張圖實在太大,就意思一下PO起來(不要在意解析度了~~拜託~~),相較於使用操作模板做demo,用這種圖面化也有很多好處喔!!<b>"對於整體的規畫會比較清楚,團隊的討論也很方便"</b>最常發生的情境就是我們幾個人對著這張圖比手畫腳一陣之後,寫下註解,恩恩~~就這樣改~~(當然會一直重複這個循環~~然後越來越快~~呵呵~~)<b>(如果時間充裕的話,我覺得先做流程圖再做DEMO比較好~~但是通常都沒那種美國時間呢~~)</b></p> -->
             <h3 id="appdemo1sec5">關於header</h3>
             <img src="img/demo1/app-10.svg">
-            <p>感謝有人發明&nbsp;<img class="incontent" src="img/demo1/app-11.svg">&nbsp;這個ICON!!(可以簡稱"露三點??")一般的情況下,USER看到&nbsp;<img class="incontent" src="img/demo1/app-12.svg">&nbsp;(直接叫漢堡~~)大多是跟"目錄"或"設定"有關的功能,對很多USER來說"目錄"跟"設定"意義上是一樣的...<b>(這是我簡單調查的結果,當然我不知道北歐5國的民眾認知是怎樣~~事實上I&nbsp;don't&nbsp;care~~)</b>但是!!!在購物APP裡,"目錄"跟"設定"完全不一樣!!"目錄"指的是商品的目錄,"設定"是偏向個人的設定(個人帳戶資料之類的),只用&nbsp;<img class="incontent" src="img/demo1/app-12.svg">&nbsp;時,就容易發生<b>"我要找設定怎麼變目錄??那要去哪裡設??"(注意!!我說的是"怎麼變目錄",意思是~~這位user打從心裡覺得"漢堡或任何出現在左右上角的神秘ICON都可以設定我的帳戶"...)</b>有人會乾脆把這兩個內容都塞到&nbsp;<img class="incontent" src="img/demo1/app-12.svg">&nbsp;裡(沒有好不好的差別拉~~用得開心都是好~~),但是!!!當目錄的品項越來越多的時候就會佔用"設定"需要的空間!!!!!</p><br>
-            <p>結果~~只要露三點就可以解決了,分開放就好了~~設計&nbsp;<img class="incontent" src="img/demo1/app-11.svg">&nbsp;的人,應該要被授予爵位~~(如果你想說..用人頭像不好嗎??....但<img class="incontent" src="img/demo1/app-11.svg">裡面的功能很多捏~~)總之,最後的結果就是漢堡vs三點~~</p>
-            <img src="img/demo1/app-14.svg">
-            <h3 id="appdemo1sec6">最愛vs前往購物車</h3>
-            <p>首頁的Floating&nbsp;Action&nbsp;Button用"我的最愛"還是"前往購物車"讓人傷透腦筋~~</p>
-            <p><b>"我的最愛"在整支APP應用範圍比較廣,"前往購物車"感覺上是唯一選擇(讓USER趕快結帳是最重要的目標~~),但是兩個都沒有確切的數據可以佐證</b>,最後決定"最愛"勝出!!在這個點上還是希望USER有較好的體驗~~(但如果上線後反饋回來需要改就沒話說了~~)</p>
-            <img src="img/demo1/app-3.jpg">
+            <p>這裡主要討論的是<img class="incontent" src="img/demo1/app-11.svg">跟<img class="incontent" src="img/demo1/app-12.svg">
+            因為橫向 swipe 的部分被用來當非常態活動的目錄,所以用<img class="incontent" src="img/demo1/app-12.svg">當成常態性的商品目錄,
+            又因為設定功能的選項比較多,單純用人頭像似乎很難完整的表達,最後是採用<img class="incontent" src="img/demo1/app-11.svg">來概括所有設定相關的功能
+            實際測試下來效果不錯喔～～沒有造成任何操作上的疑慮～～
+            </p>
             <h3 id="appdemo1sec7">關於商品頁</h3>
-            <p>商品頁重要性當然不亞於首頁,這裡的核心概念,<b>"越簡單越好"!!</b>跟產品有關的內容要多可以很多~~影片~~規格~~退換貨須知~~刷卡優惠~~事實上用TAB收起來,點擊button展開都可以解決,但我們想嘗試另一種方式~~<b>乾脆不要出現好嗎??過多的內容是否容易轉移USER的注意力??到什麼程度對大部分USER來說是剛剛好??</b>在這種情況下,就很考驗行銷人員的功力了~~他們必須把內容精減到<b>在這個畫面裡頂多滑動一次就可以獲得想要的資訊並且觸發USER的消費衝動</b>,而且都要收納在"產品說明裡",辛苦你們瞜!!</p>
+            <img class="full" src="img/demo1/app-3.jpg">
+            <p>商品頁重要性當然不亞於首頁,這裡的核心概念,<b>"越簡單越好"!!</b>跟產品有關的內容要多可以很多~~影片~~規格~~退換貨須知~~刷卡優惠~~事實上用TAB收起來,點擊button展開都可以解決,但我們想嘗試看看<b>乾脆不要出現好嗎??過多的內容是否容易轉移USER的注意力??到什麼程度對大部分USER來說是剛剛好??</b>在這種情況下,就很考驗行銷人員的功力了~~我們要求必須把內容精減到<b>在這個畫面裡頂多滑動一次就可以看完了</b>,而且都要收納在"產品說明裡"</p>
             <img src="img/demo1/app-15.svg">
-            <p><b>另一個重點抵加,如果不同規格有不同價錢的話,顯示的數字會一直改變</b>,在後面的結帳流程裡會一直存在,可以隨時掌握消費金額!!</p>
-            <img class="full" src="img/demo1/app-4.jpg">
+            <p><b>另一個重點,如果不同規格有不同價錢的話,顯示的數字會一直改變</b>,在後面的結帳流程裡會一直存在,可以隨時掌握消費金額</p>
+            <a href="https://drive.google.com/open?id=16eq6tYKdQN7sXvMyEoSlgXxypCLCpO0V" target="_blank"><img class="full" src="img/demo1/app-4.jpg"></a>
             <h3 id="appdemo1sec8">關於結帳</h3>
             <p>省略一些alert畫面,就是這樣子,自己的消費經驗讓我最在意的是輸入寄送資料的部分,一堆input要填,所以還是秉持簡約的原則,然後把上下距離拉開一點(比較好點~~),還有一個小心機,<b
               >header只剩下"返回"跟"LOGO"</b></p>
             <img src="img/demo1/app-16.svg">
-            <p><b>已經在結帳了,就不打擾您了~~</b></p>
-            <p>關於尚青購還有很多細節,目前先這樣!!</p>
+            <p><b>主要是希望在結帳過程中 user 不要亂跑</b></p>
           </div>
         </div>
     </div>
     <!-- /內容 -->
-    <img class="full hidden-xs" src="img/demo1/app-17.svg">
-    <img class="vi-xs visible-xs-block" src="img/demo1/app-5.jpg">
-     <footer class="contact">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="contactmethod col-xs-12 col-sm-4 col-sm-offset-2">
-            <ul>
-              <li class="row">
-                <div class="col-sm-3 col-xs-3">
-                  <i class="fa fa-mobile" aria-hidden="true"></i>
-                </div>
-                <span class="col-sm-9 col-xs-9">0933383952</span>
-              </li>
-              <li class="row">
-              <div class="col-sm-3 col-xs-3">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              </div>
-                <span class="col-sm-9 col-xs-9">herbtea211<br>@gmail.com</span>
-              </li>
-              <li class="row">
-               <div class="col-sm-3 col-xs-3">
-                <img class="lineicon" src="img/line_icon.svg">
-               </div>
-                <span class="col-sm-9 col-xs-9">ago-fe</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="message col-xs-12 col-sm-4">
-            <span><h3>contant us</h3></span>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Your Email</label>
-                <input type="email" class="form-control mail" id="exampleInputEmail1" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputTextarea">Message</label>
-                <textarea class="form-control messageTous" rows="3" placeholder="I think..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            
-          </div>
-
-        </div>
-      </div>
-     </footer>
+    <!-- <img class="full hidden-xs" src="img/demo1/app-17.svg"> -->
+    <footer>
+        <ul class="contactmethod">
+          <li>
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+            <span>0933383952</span>
+          </li>
+          <li>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <span>herbtea211@gmail.com</span>
+          </li>
+          <li>
+            <img class="lineicon" src="img/line_icon.svg">
+            <span>ago-fe</span>
+          </li>
+        </ul>
+    </footer>
 
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

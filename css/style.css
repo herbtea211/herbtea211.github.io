@@ -13,15 +13,6 @@ a {
 	text-decoration:underline;
 }
 
-.detailpage ol{
-	width: 90%;
-	margin: 10px auto;
-}
-
-.detailpage ol li{
-	color: #545454;
-}
-
 h1,h2,h3,h4,h5,h6{
 	text-shadow: none;
 }
@@ -532,9 +523,25 @@ footer{
 	text-align: center;
 }
 
-.detailpage img{
-	width: 50%;
+.detailpage .part{
+	margin-bottom:50px;
 }
+
+.detailpage .part img{
+	width: 40%;
+}
+
+.detailpage ol{
+	width: 90%;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.detailpage ol li{
+	color: #545454;
+}
+
+
 
 img.full{
 	width: 100%;
@@ -560,13 +567,18 @@ img.full{
 
 .detailpage h3{
 	margin: 1em auto;
+	letter-spacing: 5px;
 }
 
 .detailpage h4{
-	margin: 0.5em 2em;
+	margin: 1em 2em;
 	line-height: 2em;
     text-align: center;
     letter-spacing: 0.5em;
+}
+
+.detailpage h4.learn{
+	text-align: left;
 }
 
 .detailpage h5{
@@ -586,7 +598,7 @@ img.full{
 }
 
 .detailpage ol{
-	text-align: left;
+	
 }
 
 .detailpage li{
@@ -758,13 +770,13 @@ img.full{
 		}
 
 		.detailpage ol{
-			 padding: 1em 7em;
+			 /* padding: 1em 7em; */
+			 width: 90%;
 		}
 
 		.detailpage h4{
 			margin: 0.5em 0.5em;
 		}
-
 
 		.design .img-wrapper img{
 			width:100%;
