@@ -900,8 +900,8 @@ img.full{
 		}
 
 		.index-sloginfix{
-		position: fixed;
-		top: 20vh;
+		position: absolute;
+		top: 25vh;
 		}
 
 		.index-sloginfix h3{
@@ -933,7 +933,7 @@ img.full{
 	}
 
 	.index-sloginfix{
-	position:fixed;
+	position: absolute;
 	top: 30vh;
 	}
 

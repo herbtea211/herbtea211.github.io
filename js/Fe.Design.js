@@ -4,7 +4,7 @@
 $(document).ready(function(){
     $("body").prepend('<header id="top-bar" class="navbar-fixed-top animated-header"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div id="logo" class="navbar-brand hidden-xs"><a href="index.html" ><img src="img/LOGO.svg" alt=""></a></div></div><nav class="collapse navbar-collapse navbar-right" role="navigation"><div class="main-menu"><ul class="nav navbar-nav navbar-right"><li><a href="index.html" >Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" class="dropdown-toggle" data-toggle="dropdown">App&Web&nbsp;UI<span class="caret"></span></a><div class="dropdown-menu"><ul><li><a href="shoppingcartdemo2.html">線上開店</a></li><li><a href="appdemo1.html">尚青購</a></li><li><a href="webmenu.html">雲端點餐</a></li></ul></div></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Graphic Design<span class="caret"></span></a><div class="dropdown-menu"><ul><li><a href="Miss-Q.html">MissQ</a></li><li><a href="puyi.html">puyi</a></li><li><a href="center.html">center</a></li></ul></div></li></ul></div></nav></div></header>'
     );
-});
+}); 
 
 
 // 點擊側邊欄標題,滑動至同頁面相關內容
@@ -24,6 +24,18 @@ $(".sidenav a").click(
         return false;
     });
 
+// $(".index-sloginfix")
+// let _s = window.scrollTop
 
+// window.addEventListener('scroll',function(){
+//     console.log(_s)
+// },false);
 
-
+$(window).scroll(function () {
+    let _s = $(this).scrollTop()
+    if (_s > 100) {
+        $(".index-sloginfix").fadeOut(200)
+    } else if (_s <= 99) {
+        $(".index-sloginfix").fadeIn(600)
+    }
+});
